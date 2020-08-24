@@ -1,19 +1,8 @@
-import { Component } from '@angular/core';
-import{Quote}from'./quote';
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-})
-export class AppComponent {
-  title = 'quotes';
-}
-quotes=[
-   new Quote(1, 'EAT YOUR FRUITS'),
-   new Quote(2, 'I dont know about you , but im dealt with.'),
-   new Quote(3, 'follow through wit your plans'),
- ]
-}
 export class Quote {
-  constructor(public id:number, public name:string,){}
+
+  public showDescription:boolean;
+  constructor(public id:number, public name:string, public author:string,public submitted:string, public upvote:number, public downvote:number, public completeDate:Date){
+
+  this.showDescription=false
+}
 }
