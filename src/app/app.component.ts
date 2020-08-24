@@ -14,3 +14,6 @@ quotes=[
    new Quote(3, 'follow through wit your plans'),
  ]
 }
+export class Quote {
+  constructor(public id:number, public name:string,){}
+}
